@@ -68,6 +68,7 @@ h2 {
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1.6;
+  position: relative;
 }
 
 .card--katie {
@@ -98,4 +99,14 @@ h2 {
 
 .card--price > span {
   font-weight: bold;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: 500;
 }

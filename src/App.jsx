@@ -6,19 +6,15 @@ import Card from "./components/Card";
 import data from "./data";
 
 export default function App() {
-  const updated_cards = data.map((card) => {
+  const updated_cards = data.map(item => {
     return (
       <Card
-        key={card.id}
-        image={card.coverImg}
-        rating={card.stats.rating}
-        reviews={card.stats.reviewCount}
-        country={card.location}
-        title={card.title}
-        price={card.price}
+        key={item.id}
+        {...item}
       />
     );
   });
+  
   return (
     <>
       <Navbar />
