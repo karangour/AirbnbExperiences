@@ -1,5 +1,5 @@
 import React from "react";
-import photos from "./../assets/photo-grid.png";
+import photos from "./../../public/assets/photo-grid.png";
 
 export default function Body() {
   return (
